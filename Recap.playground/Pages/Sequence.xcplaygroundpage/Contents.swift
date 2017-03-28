@@ -27,7 +27,11 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 500, height: 400)
 
-// Replace this comment and add your code below 
+//Drawing triangle with custom shape
+var points : [NSPoint] = [] // created empty array with type nspoint
+points.append( NSPoint(x: 4, y: 5) )
+points.append( NSPoint(x: 50, y:100) )
+points.append( NSPoint(x:200, y: 50) )
 
 
 /*:
