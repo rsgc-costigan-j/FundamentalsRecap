@@ -33,7 +33,7 @@ points.append( NSPoint(x: 4, y: 5) )
 points.append( NSPoint(x: 50, y:100) )
 points.append( NSPoint(x:200, y: 50) )
 
-
+canvas.drawCustomShape(with: points)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.

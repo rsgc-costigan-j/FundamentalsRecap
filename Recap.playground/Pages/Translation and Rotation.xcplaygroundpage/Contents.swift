@@ -28,8 +28,13 @@
 import Cocoa
 import PlaygroundSupport
 
+
 // Create canvas
 let canvas = Canvas(width: 400, height: 400)
+
+canvas.translate(byX: 200, byY: 200)
+canvas.rotate(by: 120)
+
 
 // Draw slightly thicker lines
 canvas.defaultLineWidth = 4
