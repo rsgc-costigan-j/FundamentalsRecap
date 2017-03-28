@@ -21,8 +21,12 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 400, height: 400)
 
-for x in stride(from: 0, to: 20, by: 1){
-    canvas.drawEllipse(centreX: 200, centreY: 200, width: <#T##Int#>, height: <#T##Int#>)
+for z in stride(from: 0, to: 20, by: 1){
+    canvas.drawEllipse(centreX: 200, centreY: 200, width: 350, height: 15)
+    var x = 18
+    canvas.rotate(by: Degrees(x))
+    canvas.translate(byX: -x, byY: x)
+    x + 18
 }
 /*:
  ## Template code
