@@ -26,14 +26,28 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 500, height: 400)
+canvas.drawShapesWithBorders = false
 
 //Drawing triangle with custom shape
 var points : [NSPoint] = [] // created empty array with type nspoint
-points.append( NSPoint(x: 4, y: 5) )
-points.append( NSPoint(x: 50, y:100) )
-points.append( NSPoint(x:200, y: 50) )
+canvas.fillColor = Color(hue: 90, saturation: 100, brightness: 85, alpha: 75)
+points.append( NSPoint(x: 300, y: 300) )
+points.append( NSPoint(x: 450, y:300) )
+points.append( NSPoint(x:375, y: 50) )
 
 canvas.drawCustomShape(with: points)
+
+//drawing orange rectangle
+//Drawing triangle with custom shape
+var points1 : [NSPoint] = [] // created empty array with type nspoint
+canvas.fillColor = Color(hue: 40, saturation: 100, brightness: 97, alpha: 75)
+points.append( NSPoint(x: 200, y: 50) )
+points.append( NSPoint(x: 450, y:50) )
+points.append( NSPoint(x:200, y: 200) )
+points.append( NSPoint(x:450, y: 200) )
+canvas.drawCustomShape(with: points)
+
+
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.

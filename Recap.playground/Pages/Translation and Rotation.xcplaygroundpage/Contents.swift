@@ -33,7 +33,7 @@ import PlaygroundSupport
 let canvas = Canvas(width: 400, height: 400)
 
 canvas.translate(byX: 200, byY: 200)
-canvas.rotate(by: 120)
+canvas.rotate(by: 45)
 
 
 // Draw slightly thicker lines
