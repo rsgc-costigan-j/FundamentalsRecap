@@ -27,17 +27,18 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 400, height: 400)
 
+for y in stride(from: 370, to: 30, by: -150){
 for x in stride(from: 30, to: 401, by: 55){
 canvas.fillColor = Color(hue: 26, saturation: 69, brightness: 37, alpha: 100)
-canvas.drawEllipse(centreX: x, centreY: 370, width: 50, height: 50)
+canvas.drawEllipse(centreX: x, centreY: y, width: 50, height: 50)
 canvas.fillColor = Color(hue: 22, saturation: 93, brightness: 90, alpha: 100)
-canvas.drawEllipse(centreX: x, centreY: 370, width: 35, height: 35)
+canvas.drawEllipse(centreX: x, centreY: y, width: 35, height: 35)
 canvas.fillColor = Color(hue: 53, saturation: 93, brightness: 98, alpha: 100)
-canvas.drawEllipse(centreX: x, centreY: 370, width: 20, height: 20)
+canvas.drawEllipse(centreX: x, centreY: y, width: 20, height: 20)
 canvas.fillColor = Color(hue: 1, saturation: 0, brightness: 98, alpha: 100)
-canvas.drawEllipse(centreX: x, centreY: 370, width: 5, height: 5)
+canvas.drawEllipse(centreX: x, centreY: y, width: 5, height: 5)
 }
-
+}
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
